@@ -64,6 +64,10 @@
           </h1>
           <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+          <!-- open sidebar / offcanvas -->
+          <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+            Explore my other books
+          </a>
         </div>
         <div class="col-md-5 text-center d-none d-md-block">
           <!-- tooltip -->
@@ -388,7 +392,7 @@
             dolorem perspiciatis consequuntur vero. Provident tempore enim excepturi veritatis 
             laboriosam assumenda corrupti porro quod quo! Enim minima placeat voluptate eius.
           </p>
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+          <button class="btn btn-primary mb-5" data-bs-toggle="modal" data-bs-target="#reg-modal">
             Register for Updates
           </button>
         </div>
@@ -417,6 +421,27 @@
     </div>
   </div>
 
+  <!-- side panel / offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In minima ducimus excepturi quasi tempore fugit quis voluptatibus aut error possimus, tenetur natus magni quam voluptatem quae eligendi repudiandae delectus eaque!</p>
+      <!-- dropdown -->
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+          Choose a book title
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+          <li><a class="dropdown-item" href="#">Become a React Superhero</a></li>
+          <li><a class="dropdown-item" href="#">Conquering Vue.js</a></li>
+          <li><a class="dropdown-item" href="#">Levelling up Your Next.js</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script>
     const tooltips = document.querySelectorAll('.tt');
